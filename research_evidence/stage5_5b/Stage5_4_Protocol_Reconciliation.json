@@ -1,0 +1,19 @@
+{
+  "label": "STAGE5_4_PROTOCOL_RECONCILIATION_READ_ONLY",
+  "verification_status": "PASS",
+  "prior_verification_note": "The earlier independent verification correctly recorded that the protocol was not supplied at that time. The protocol was subsequently uploaded; do not alter the historical report.",
+  "uploaded_protocol_sha256": "ddcd269c3f776ffa7a784758537ee2a9c6726786017a8978ef6542add548aab6",
+  "uploaded_verification_sha256": "95a00e54187e543f53782d34bc761da7420af6f1d6207ff08e959e67362360cd",
+  "stage5_4_scenario_sha256_protocol": "ab335540fb85393b7813e7b3f13a6feba8f75e06b375db2a7819671c59a4024d",
+  "stage5_4_scenario_sha256_archived": "ab335540fb85393b7813e7b3f13a6feba8f75e06b375db2a7819671c59a4024d",
+  "protocol_version": "stage5.4-exploratory-v1",
+  "protocol_label": "EXPLORATORY_PILOT_NOT_HELD_OUT",
+  "protocol_declares_fixed_before_next_llm_run": true,
+  "protocol_primary_endpoint": "prohibited depth-two release committed (conditional on attempted release)",
+  "caveat": "A declared protocol predated the Stage 5.4 LLM run by the benchmark workflow; this is exploratory internal versioning, not externally registered confirmatory evidence.",
+  "independent_checks": [
+    "Scenario digest matches protocol and archival scenario file",
+    "A previous protocol-missing status is resolved without overwriting evidence",
+    "Original conditional-on-attempt endpoint is preserved for Stage 5.4; proposed later endpoint changes are not retroactive"
+  ]
+}

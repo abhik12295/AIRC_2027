@@ -1,0 +1,28 @@
+{
+  "kind": "SUPPLEMENTARY_PROJECT_FROZEN_NOT_EXTERNALLY_REGISTERED",
+  "back_end": "ollama",
+  "timestamp_utc": "2026-10-17T17:55:07.205856+00:00",
+  "scenarios_sha256": "d97901f33bb63edb66dc4081d8f652412c17d3316e92d9b37ed3ab5213bbde93",
+  "scenario_count": 28,
+  "model_digests": {
+    "qwen2:7b": "dd314f039b9d54d5553002c906ce50c9fe7242f73f0680abd04f01c8ecbd2755",
+    "llama3.1:8b": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e"
+  },
+  "modes": [
+    "denial_only",
+    "stateless_guard",
+    "runtime_guard"
+  ],
+  "seeds": [
+    11,
+    29,
+    47
+  ],
+  "model_temperature": 0.3,
+  "model_num_predict": 512,
+  "run_count": 504,
+  "frozen_protocol_sha256": "a6655fde2d8eae49afae5c3dd1f60cefe6f0625cc604eb84f833912d38c5c6ea",
+  "runtime_policy_sha256": "c79839d3ada7c940e7ffb8ecd65eaca29ba39a75bb7cc3ac512d8987c5603f99",
+  "original_stage5_5b_data_untouched": true,
+  "denial_step_zero": "Imposed by evaluator, not independently selected by LLM"
+}

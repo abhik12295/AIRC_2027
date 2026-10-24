@@ -1,0 +1,21 @@
+
+# Python-generated files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+
+# Local environments
+.venv/
+venv/
+
+# Sensitive local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*credentials*.json
+
+# Local machine files
+.DS_Store

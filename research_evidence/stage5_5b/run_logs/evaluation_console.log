@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/stuartabhi/Projects/AIRC 2027/benchmark/run_experiment.py", line 156, in <module>
+    main()
+    ~~~~^^
+  File "/Users/stuartabhi/Projects/AIRC 2027/benchmark/run_experiment.py", line 101, in main
+    raise ValueError("Frozen evaluation output already exists; refuse overwrite of research evidence")
+ValueError: Frozen evaluation output already exists; refuse overwrite of research evidence

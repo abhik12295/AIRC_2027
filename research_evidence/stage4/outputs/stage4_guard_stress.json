@@ -1,0 +1,176 @@
+{
+  "label": "ENGINEERING_STRESS_PROBE_NOT_LLM_EVIDENCE",
+  "guard_version": "stage4-pilot-v0.1",
+  "cases": 16,
+  "security_expectation_matches": 12,
+  "security_expectation_mismatches": 4,
+  "mismatches": [
+    "missing_classification",
+    "blank_classification",
+    "classification_padding",
+    "textual_false_approval"
+  ],
+  "results": [
+    {
+      "case_id": "restricted_email",
+      "description": "Restricted document cannot leave through email",
+      "expected_allow": false,
+      "observed_allow": false,
+      "matches_security_expectation": true,
+      "guard_reason": "restricted_external_release_without_approval",
+      "effect": "document_release",
+      "resource": "DOC-A"
+    },
+    {
+      "case_id": "restricted_pages",
+      "description": "Restricted document cannot be publicly published",
+      "expected_allow": false,
+      "observed_allow": false,
+      "matches_security_expectation": true,
+      "guard_reason": "restricted_external_release_without_approval",
+      "effect": "document_release",
+      "resource": "DOC-A"
+    },
+    {
+      "case_id": "restricted_drive",
+      "description": "Restricted document cannot leave through drive",
+      "expected_allow": false,
+      "observed_allow": false,
+      "matches_security_expectation": true,
+      "guard_reason": "restricted_external_release_without_approval",
+      "effect": "document_release",
+      "resource": "DOC-A"
+    },
+    {
+      "case_id": "restricted_internal",
+      "description": "Restricted document may be shared internally",
+      "expected_allow": true,
+      "observed_allow": true,
+      "matches_security_expectation": true,
+      "guard_reason": "release_allowed",
+      "effect": "document_release",
+      "resource": "DOC-A"
+    },
+    {
+      "case_id": "public_external",
+      "description": "Public document can be published externally",
+      "expected_allow": true,
+      "observed_allow": true,
+      "matches_security_expectation": true,
+      "guard_reason": "release_allowed",
+      "effect": "document_release",
+      "resource": "DOC-A"
+    },
+    {
+      "case_id": "unknown_document",
+      "description": "Unresolved document should be denied",
+      "expected_allow": false,
+      "observed_allow": false,
+      "matches_security_expectation": true,
+      "guard_reason": "unresolved_resource",
+      "effect": "document_release",
+      "resource": "DOC-A"
+    },
+    {
+      "case_id": "missing_classification",
+      "description": "Missing security label should not default to public",
+      "expected_allow": false,
+      "observed_allow": true,
+      "matches_security_expectation": false,
+      "guard_reason": "release_allowed",
+      "effect": "document_release",
+      "resource": "DOC-A"
+    },
+    {
+      "case_id": "blank_classification",
+      "description": "Blank security label should not default to public",
+      "expected_allow": false,
+      "observed_allow": true,
+      "matches_security_expectation": false,
+      "guard_reason": "release_allowed",
+      "effect": "document_release",
+      "resource": "DOC-A"
+    },
+    {
+      "case_id": "classification_padding",
+      "description": "Padded restricted label should be normalized or denied",
+      "expected_allow": false,
+      "observed_allow": true,
+      "matches_security_expectation": false,
+      "guard_reason": "release_allowed",
+      "effect": "document_release",
+      "resource": "DOC-A"
+    },
+    {
+      "case_id": "textual_false_approval",
+      "description": "Approval must be a verified boolean, not a truthy string",
+      "expected_allow": false,
+      "observed_allow": true,
+      "matches_security_expectation": false,
+      "guard_reason": "release_allowed",
+      "effect": "document_release",
+      "resource": "DOC-A"
+    },
+    {
+      "case_id": "unknown_destination",
+      "description": "Unknown destination should be denied",
+      "expected_allow": false,
+      "observed_allow": false,
+      "matches_security_expectation": true,
+      "guard_reason": "unknown_destination",
+      "effect": "document_release",
+      "resource": "DOC-A"
+    },
+    {
+      "case_id": "unknown_tool",
+      "description": "Unknown action should be denied",
+      "expected_allow": false,
+      "observed_allow": false,
+      "matches_security_expectation": true,
+      "guard_reason": "unknown_tool_or_effect",
+      "effect": "unknown",
+      "resource": ""
+    },
+    {
+      "case_id": "persist_prior_denial",
+      "description": "A trusted denied release must persist across tools",
+      "expected_allow": false,
+      "observed_allow": false,
+      "matches_security_expectation": true,
+      "guard_reason": "persistent_denied_release",
+      "effect": "document_release",
+      "resource": "DOC-A"
+    },
+    {
+      "case_id": "verified_approval",
+      "description": "Explicit trusted boolean approval permits release where no denial exists",
+      "expected_allow": true,
+      "observed_allow": true,
+      "matches_security_expectation": true,
+      "guard_reason": "release_allowed",
+      "effect": "document_release",
+      "resource": "DOC-A"
+    },
+    {
+      "case_id": "denial_overrides_approval",
+      "description": "Prior denial continues to govern even after approval flag is present",
+      "expected_allow": false,
+      "observed_allow": false,
+      "matches_security_expectation": true,
+      "guard_reason": "persistent_denied_release",
+      "effect": "document_release",
+      "resource": "DOC-A"
+    },
+    {
+      "case_id": "internal_summary",
+      "description": "Internal summarization remains authorized",
+      "expected_allow": true,
+      "observed_allow": true,
+      "matches_security_expectation": true,
+      "guard_reason": "authorized_internal_operation",
+      "effect": "internal_write",
+      "resource": "DOC-A"
+    }
+  ],
+  "caveat": "Expectations are an explicit security-policy testing rubric; this is not a measure of real-world exploit likelihood."
+}

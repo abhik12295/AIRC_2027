@@ -1,0 +1,6 @@
+{
+  "status": "SUPPLEMENTARY_PROJECT_FROZEN_NOT_EXTERNALLY_REGISTERED",
+  "rows": 504,
+  "jsonl": "benchmark/outputs/stage5_6_multisource.jsonl",
+  "manifest": "benchmark/outputs/stage5_6_multisource.manifest.json"
+}

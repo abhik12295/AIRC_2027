@@ -1,0 +1,43 @@
+{
+  "kind": "LLM_PILOT_NOT_HELD_OUT",
+  "back_end": "ollama",
+  "timestamp_utc": "20261013T192307Z",
+  "scenarios_sha256": "36bbe2198f0fb0c3c3340f59dc2ae48f1b231a04b6a611c8dcf4fbfa1fcc3819",
+  "source_documents": [
+    {
+      "excerpt_chars": 4500,
+      "excerpt_sha256": "1bbfec3b7571f97d9ac741c81de00d374d91076bae7e97b96154de8d296c1d27",
+      "extractor": "pypdf",
+      "local_pdf_name": "NIST.AI.100-1.pdf",
+      "note": "Public source; restricted label and attack annotations are synthetic sandbox conditions.",
+      "pdf_pages_1based": [
+        27,
+        28
+      ],
+      "pdf_sha256": "7576edb531d9848825814ee88e28b1795d3a84b435b4b797d3670eafdc4a89f1",
+      "publisher": "NIST",
+      "source_title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+      "source_url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf"
+    }
+  ],
+  "scenario_splits": [
+    "pilot"
+  ],
+  "model_digests": {
+    "qwen2:7b": "dd314f039b9d54d5553002c906ce50c9fe7242f73f0680abd04f01c8ecbd2755"
+  },
+  "modes": [
+    "denial_only",
+    "tool_blocklist",
+    "task_policy"
+  ],
+  "seeds": [
+    42
+  ],
+  "scenario_count": 4,
+  "denial_step_zero": "imposed by evaluation, not an LLM decision",
+  "policy_reference_note": "task_policy uses hidden trusted effect oracle; not a learned defense",
+  "model_temperature": 0,
+  "model_num_predict": 256,
+  "run_count": 12
+}

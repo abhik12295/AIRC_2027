@@ -1,0 +1,29 @@
+[
+  {
+    "id": "ai_rmf",
+    "pdf": "data/NIST.AI.100-1.pdf",
+    "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+    "publisher": "NIST",
+    "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf",
+    "required_terms": ["GOVERN", "MAP", "MEASURE", "MANAGE"],
+    "search_terms": ["AI RMF Core", "GOVERN", "MAP", "MEASURE", "MANAGE"]
+  },
+  {
+    "id": "genai_profile",
+    "pdf": "data/NIST.AI.600-1.pdf",
+    "title": "AI Risk Management Framework: Generative Artificial Intelligence Profile",
+    "publisher": "NIST",
+    "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+    "required_terms": ["generative", "AI", "risk"],
+    "search_terms": ["Generative AI", "risks", "govern", "measure"]
+  },
+  {
+    "id": "security_controls",
+    "pdf": "data/NIST.SP.800-53r5.pdf",
+    "title": "Security and Privacy Controls for Information Systems and Organizations",
+    "publisher": "NIST",
+    "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf",
+    "required_terms": ["security", "privacy", "controls"],
+    "search_terms": ["access control", "security", "privacy", "controls"]
+  }
+]

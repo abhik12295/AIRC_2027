@@ -1,0 +1,230 @@
+{
+  "timestamp_utc": "2026-10-14T01:08:29.716538+00:00",
+  "type": "AIRC_REPOSITORY_HOUSEKEEPING",
+  "preserves": [
+    "benchmark Python source",
+    "tests",
+    "datasets",
+    "scenario files",
+    "policies",
+    "stage5_2 active outputs",
+    ".git",
+    ".venv"
+  ],
+  "moves": [
+    {
+      "from": "README_STAGE4_2.md",
+      "to": "docs/history/README_STAGE4_2.md",
+      "sha256": "b1da5121cbf68b00f8349805e9064dfe68f40d6810b73e4d8c87a73de7e83a22",
+      "type": "file"
+    },
+    {
+      "from": "STAGE3_1_README.md",
+      "to": "docs/history/STAGE3_1_README.md",
+      "sha256": "2ea095a8326ee0eddd61a5fb5bb7c0cbdfbab6a80a77fe2fda5ba08e5c003275",
+      "type": "file"
+    },
+    {
+      "from": "STAGE3_2_REAL_DOCUMENT_README.md",
+      "to": "docs/history/STAGE3_2_REAL_DOCUMENT_README.md",
+      "sha256": "690bb018281909956bb975b6dffc7fc5823fd436cec17d023cd3435494150804",
+      "type": "file"
+    },
+    {
+      "from": "STAGE3_3_README.md",
+      "to": "docs/history/STAGE3_3_README.md",
+      "sha256": "64204f65b66d76982db3f0388330c74426b6c9dcf4702baf7137f4ecb84db1bc",
+      "type": "file"
+    },
+    {
+      "from": "STAGE3_RESEARCH_LOG.md",
+      "to": "docs/history/STAGE3_RESEARCH_LOG.md",
+      "sha256": "1c657c126d6abcb793ee8c8e96be5035b1075d1027ec03eaeeb7da12cccd8f4c",
+      "type": "file"
+    },
+    {
+      "from": "STAGE4_RUNTIME_GUARD_README.md",
+      "to": "docs/history/STAGE4_RUNTIME_GUARD_README.md",
+      "sha256": "edf539ef4087b66d01f1ed862f3c4c5ee48f497468ca1d119753e12465c60149",
+      "type": "file"
+    },
+    {
+      "from": "STAGE5_2_PROTOCOL.json",
+      "to": "research_evidence/stage5_2/protocol/STAGE5_2_PROTOCOL.json",
+      "sha256": "a5373530517924ac325a355e3c7d40203aa158707f0b2f01ec59b4448522db06",
+      "type": "file"
+    },
+    {
+      "from": "tests_before_stage4_2",
+      "to": "research_evidence/code_backups/tests_before_stage4_2",
+      "sha256": null,
+      "type": "directory"
+    },
+    {
+      "from": "benchmark/outputs/genai_qwen2_guard_pilot.audit.json",
+      "to": "research_evidence/stage4/outputs/genai_qwen2_guard_pilot.audit.json",
+      "sha256": "362f41a4a37000b113c50bba1426bbd55de940aba9b1760d9a015fa014699749",
+      "type": "file"
+    },
+    {
+      "from": "benchmark/outputs/genai_qwen2_guard_pilot.jsonl",
+      "to": "research_evidence/stage4/outputs/genai_qwen2_guard_pilot.jsonl",
+      "sha256": "73606d298d93f70cb7f7826f704c5d3549119ca02e3e31abbc56da16796e0095",
+      "type": "file"
+    },
+    {
+      "from": "benchmark/outputs/genai_qwen2_guard_pilot.manifest.json",
+      "to": "research_evidence/stage4/outputs/genai_qwen2_guard_pilot.manifest.json",
+      "sha256": "36fdfa7d4db62056aa838340b6dc31ab063380668069b32c42c23f489df710ad",
+      "type": "file"
+    },
+    {
+      "from": "benchmark/outputs/genai_qwen2_guard_v42.audit.json",
+      "to": "research_evidence/stage4_2/outputs/genai_qwen2_guard_v42.audit.json",
+      "sha256": "362f41a4a37000b113c50bba1426bbd55de940aba9b1760d9a015fa014699749",
+      "type": "file"
+    },
+    {
+      "from": "benchmark/outputs/genai_qwen2_guard_v42.jsonl",
+      "to": "research_evidence/stage4_2/outputs/genai_qwen2_guard_v42.jsonl",
+      "sha256": "963fa01dcf6692660259034bf90ec1989aecece8910be5e341d4df36515e4b26",
+      "type": "file"
+    },
+    {
+      "from": "benchmark/outputs/genai_qwen2_guard_v42.manifest.json",
+      "to": "research_evidence/stage4_2/outputs/genai_qwen2_guard_v42.manifest.json",
+      "sha256": "a32e2b721dedf2e3506102c31a083acf8d93b8353894befd4fde497d47d0d909",
+      "type": "file"
+    },
+    {
+      "from": "benchmark/outputs/genai_qwen2_pilot.audit.json",
+      "to": "research_evidence/stage3_4/outputs/genai_qwen2_pilot.audit.json",
+      "sha256": "ebe011f43ff9de4efc645c4b6c93f653d7672b9afef930ab6746c0e0fe5d8312",
+      "type": "file"
+    },
+    {
+      "from": "benchmark/outputs/genai_qwen2_pilot.jsonl",
+      "to": "research_evidence/stage3_4/outputs/genai_qwen2_pilot.jsonl",
+      "sha256": "aa8e2923ae3ef2689a48f99c70df5950d80a9524cf20937437a93bb41b209efe",
+      "type": "file"
+    },
+    {
+      "from": "benchmark/outputs/genai_qwen2_pilot.manifest.json",
+      "to": "research_evidence/stage3_4/outputs/genai_qwen2_pilot.manifest.json",
+      "sha256": "8ec3c3308248d541adbbcbe5b97d9bf95fad631ff46689d3a00ab2cb9d88c7e9",
+      "type": "file"
+    },
+    {
+      "from": "benchmark/outputs/genai_qwen2_variants.csv",
+      "to": "research_evidence/stage3_4/outputs/genai_qwen2_variants.csv",
+      "sha256": "7ee04289cda0884351135f19032896e5d33ef33790e56276d1227093a73a90e5",
+      "type": "file"
+    },
+    {
+      "from": "benchmark/outputs/robustness_qwen2_pilot.audit.json",
+      "to": "research_evidence/stage3_3/outputs/robustness_qwen2_pilot.audit.json",
+      "sha256": "e1dedf45716037472c23c877e55761547100f5d91c7ca85ac67fb1c098aa320b",
+      "type": "file"
+    },
+    {
+      "from": "benchmark/outputs/robustness_qwen2_pilot.jsonl",
+      "to": "research_evidence/stage3_3/outputs/robustness_qwen2_pilot.jsonl",
+      "sha256": "25d6beb41b49c2f165b2f00e7594b646805398b8866ce5889d464b655105b3ce",
+      "type": "file"
+    },
+    {
+      "from": "benchmark/outputs/robustness_qwen2_pilot.manifest.json",
+      "to": "research_evidence/stage3_3/outputs/robustness_qwen2_pilot.manifest.json",
+      "sha256": "0f869ee1ab483cd125b690c5e25d529d47ca599af1c8339787719635a49742c3",
+      "type": "file"
+    },
+    {
+      "from": "benchmark/outputs/robustness_qwen2_variants.csv",
+      "to": "research_evidence/stage3_3/outputs/robustness_qwen2_variants.csv",
+      "sha256": "4b473c44c6fb615da76249d13962689756a2e2dda198e279cec3c9b8a5751415",
+      "type": "file"
+    },
+    {
+      "from": "benchmark/outputs/stage4_2_ablation.json",
+      "to": "research_evidence/stage4_2/outputs/stage4_2_ablation.json",
+      "sha256": "771e5f2f36a874941f811449f7c454c34afae737b4d0f25fb0fe801f8dd2c20b",
+      "type": "file"
+    },
+    {
+      "from": "benchmark/outputs/stage4_2_guard_stress.json",
+      "to": "research_evidence/stage4_2/outputs/stage4_2_guard_stress.json",
+      "sha256": "5ca1de9e47acebc3a3ad6ec839e9f7429db2f522c20fa51ee504532d3bc9eb32",
+      "type": "file"
+    },
+    {
+      "from": "benchmark/outputs/stage4_2_matched_comparison.json",
+      "to": "research_evidence/stage4_2/outputs/stage4_2_matched_comparison.json",
+      "sha256": "6903bc3568562a487971e8690f350a0bb281d8e36c0b7d19276967aff9fa262e",
+      "type": "file"
+    },
+    {
+      "from": "benchmark/outputs/stage4_guard_stress.json",
+      "to": "research_evidence/stage4/outputs/stage4_guard_stress.json",
+      "sha256": "db796e179ee4ad2a1b166abf7a6d77f8fac61cc59c58484dfeb47dd731e961bb",
+      "type": "file"
+    },
+    {
+      "from": "benchmark/outputs/stage4_matched_comparison.json",
+      "to": "research_evidence/stage4/outputs/stage4_matched_comparison.json",
+      "sha256": "e1cd12c92722cf4e1f52a2b7e4544dba00f91d89832cc45e2764445320a82082",
+      "type": "file"
+    },
+    {
+      "from": "benchmark/outputs/stage5_1_qwen2_pilot.audit.json",
+      "to": "research_evidence/stage5_1/outputs/stage5_1_qwen2_pilot.audit.json",
+      "sha256": "43c10de1aec049be3de09b010d1d03496c42f87a3945c8b6b0435530bae7daeb",
+      "type": "file"
+    },
+    {
+      "from": "benchmark/outputs/stage5_1_qwen2_pilot.jsonl",
+      "to": "research_evidence/stage5_1/outputs/stage5_1_qwen2_pilot.jsonl",
+      "sha256": "4f0dacaccc01607e30edabae49916d298980b54cb87b8400dc9065ef8869f152",
+      "type": "file"
+    },
+    {
+      "from": "benchmark/outputs/stage5_1_qwen2_pilot.manifest.json",
+      "to": "research_evidence/stage5_1/outputs/stage5_1_qwen2_pilot.manifest.json",
+      "sha256": "824f914cea672a125d28e38466055c6b2bfe3168b21fe3b32a0989410dc9991b",
+      "type": "file"
+    },
+    {
+      "from": "benchmark/outputs/stage5_qwen2_pilot.audit.json",
+      "to": "research_evidence/stage5/outputs/stage5_qwen2_pilot.audit.json",
+      "sha256": "1f30d439195414da0f91653c4c06af7795cb44d9c8bddf1b665568a16f985eb5",
+      "type": "file"
+    },
+    {
+      "from": "benchmark/outputs/stage5_qwen2_pilot.jsonl",
+      "to": "research_evidence/stage5/outputs/stage5_qwen2_pilot.jsonl",
+      "sha256": "e27a2cf684cfd46bd0970324ad25b0926d236e5c2561849fd95587cadfaa365a",
+      "type": "file"
+    },
+    {
+      "from": "benchmark/outputs/stage5_qwen2_pilot.manifest.json",
+      "to": "research_evidence/stage5/outputs/stage5_qwen2_pilot.manifest.json",
+      "sha256": "36de541de65e4092cbc2e797e65bf08ae60af91d180ea7102583fbb489380c91",
+      "type": "file"
+    },
+    {
+      "from": "benchmark/outputs/stage5_trace_diagnostics.json",
+      "to": "research_evidence/stage5/outputs/stage5_trace_diagnostics.json",
+      "sha256": "c317974f4f061b523ec8ee13030d70d7042857af9bec917f890e406839b7fa78",
+      "type": "file"
+    },
+    {
+      "from": "benchmark/Stage5_Original_Trace_Verification.json",
+      "to": "research_evidence/stage5_1/verification/Stage5_Original_Trace_Verification.json",
+      "sha256": "b6d6a0e801c17988bf3dd8685d486b0022c49558b6b48da0a9b6c077e9455d12",
+      "type": "file"
+    }
+  ],
+  "regenerable_caches_removed": [
+    "tests/__pycache__",
+    "benchmark/__pycache__"
+  ]
+}

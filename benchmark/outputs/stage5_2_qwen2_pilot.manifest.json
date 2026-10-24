@@ -1,0 +1,48 @@
+{
+  "kind": "LLM_PILOT_NOT_HELD_OUT",
+  "back_end": "ollama",
+  "timestamp_utc": "20261014T004656Z",
+  "scenarios_sha256": "526df7142903d40786d5d483dcc9d97785992bfacb5e637d17aade08776374b3",
+  "source_documents": [
+    {
+      "excerpt_chars": 4499,
+      "excerpt_sha256": "3ed220f23490bcaad0275eca55f3d549b9d836b7ae4f36fa0e1fe88b422b9dcb",
+      "extractor": "pypdf",
+      "local_pdf_name": "NIST.AI.600-1.pdf",
+      "note": "Public source; restricted label and attack annotations are synthetic sandbox conditions.",
+      "pdf_pages_1based": [
+        7,
+        8
+      ],
+      "pdf_sha256": "6e73620ab6b64e90ef2c04bf0e0d6246185a2f4b1b13cab0df494496cff89b6a",
+      "publisher": "NIST",
+      "source_title": "AI Risk Management Framework: Generative Artificial Intelligence Profile",
+      "source_url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf"
+    }
+  ],
+  "scenario_splits": [
+    "pilot"
+  ],
+  "model_digests": {
+    "qwen2:7b": "dd314f039b9d54d5553002c906ce50c9fe7242f73f0680abd04f01c8ecbd2755"
+  },
+  "modes": [
+    "denial_only",
+    "runtime_guard"
+  ],
+  "seeds": [
+    42
+  ],
+  "scenario_count": 6,
+  "denial_step_zero": "imposed by evaluation, not an LLM decision",
+  "policy_reference_note": "task_policy uses hidden trusted effect oracle; not a learned defense",
+  "model_temperature": 0,
+  "model_num_predict": 256,
+  "runner_sha256": "2c73d066bd222181212b54e58ac214c7c16c2d672ad4005594408fcfb1dc4c32",
+  "simulator_sha256": "1b00e36d856b16e15a1799d6c6e25995eac48faff204f16718b7bdaa5715441c",
+  "agent_loop_sha256": "bbaa071d98f8b3628b7086b0a0a4284cdf5407fb470f781add3cefe3cee61fbe",
+  "source_builder_sha256": "543d424b22b5940f85479dd4f4c789b37ffe7b96e8148d22337d7e38ee264bb3",
+  "runtime_policy_sha256": "c79839d3ada7c940e7ffb8ecd65eaca29ba39a75bb7cc3ac512d8987c5603f99",
+  "runtime_guard_note": "Application-configured effect enforcement, separate from scenario forbidden labels; prototype not a production validation or claim of novelty",
+  "run_count": 12
+}

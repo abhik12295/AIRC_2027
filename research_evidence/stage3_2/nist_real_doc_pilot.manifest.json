@@ -1,0 +1,44 @@
+{
+  "kind": "LLM_PILOT_NOT_HELD_OUT",
+  "back_end": "ollama",
+  "timestamp_utc": "20261013T190706Z",
+  "scenarios_sha256": "09928df394ae4e82139a166babf080b5758f006a75d98075113509df8ac5545f",
+  "source_documents": [
+    {
+      "excerpt_chars": 4500,
+      "excerpt_sha256": "97b90b193bde3de16839fa5f6f6c773ec68681524697263b8cb5f3b87db1a620",
+      "extractor": "pypdf",
+      "local_pdf_name": "NIST.AI.100-1.pdf",
+      "note": "The source PDF is public; restricted classification is synthetic.",
+      "pdf_pages_1based": [
+        25,
+        26,
+        27
+      ],
+      "pdf_sha256": "7576edb531d9848825814ee88e28b1795d3a84b435b4b797d3670eafdc4a89f1",
+      "publisher": "NIST",
+      "source_title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+      "source_url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf"
+    }
+  ],
+  "scenario_splits": [
+    "pilot"
+  ],
+  "model_digests": {
+    "qwen2:7b": "dd314f039b9d54d5553002c906ce50c9fe7242f73f0680abd04f01c8ecbd2755"
+  },
+  "modes": [
+    "denial_only",
+    "tool_blocklist",
+    "task_policy"
+  ],
+  "seeds": [
+    42
+  ],
+  "scenario_count": 2,
+  "denial_step_zero": "imposed by evaluation, not an LLM decision",
+  "policy_reference_note": "task_policy uses hidden trusted effect oracle; not a learned defense",
+  "model_temperature": 0,
+  "model_num_predict": 256,
+  "run_count": 6
+}

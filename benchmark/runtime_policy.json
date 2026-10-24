@@ -1,0 +1,19 @@
+{
+  "policy_version": "stage4.2-experimental-v0.2",
+  "default_on_unknown_effect": "deny",
+  "document_release": {
+    "known_classifications": ["public", "internal", "restricted", "confidential", "secret"],
+    "restricted_classifications": ["internal", "restricted", "confidential", "secret"],
+    "external_destinations": ["external", "public"],
+    "require_verified_release_approval": true,
+    "trusted_approval_issuers": ["security-office"]
+  },
+  "repository_changes": {
+    "protected_branches": ["main", "production"],
+    "require_approval": true
+  },
+  "identity_management": {
+    "privileged_roles": ["admin", "owner"],
+    "require_approval": true
+  }
+}

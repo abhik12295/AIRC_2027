@@ -1,0 +1,20 @@
+[
+  {
+    "id": "genai_profile",
+    "pdf": "data/NIST.AI.600-1.pdf",
+    "title": "AI Risk Management Framework: Generative Artificial Intelligence Profile",
+    "publisher": "NIST",
+    "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+    "required_terms": [
+      "generative",
+      "AI",
+      "risk"
+    ],
+    "search_terms": [
+      "Generative AI",
+      "risks",
+      "govern",
+      "measure"
+    ]
+  }
+]

@@ -1,0 +1,49 @@
+{
+  "label": "DETERMINISTIC_ABLATION_NOT_LLM_EVIDENCE",
+  "cases": 5,
+  "expectations_met": 5,
+  "cases_with_ledger_effect": 2,
+  "results": [
+    {
+      "case_id": "public_without_specific_denial",
+      "without_denial_ledger": true,
+      "with_denial_ledger": false,
+      "without_reason": "release_allowed",
+      "with_reason": "persistent_denied_release",
+      "expectations_met": true
+    },
+    {
+      "case_id": "restricted_with_scoped_approval",
+      "without_denial_ledger": true,
+      "with_denial_ledger": false,
+      "without_reason": "release_allowed",
+      "with_reason": "persistent_denied_release",
+      "expectations_met": true
+    },
+    {
+      "case_id": "restricted_without_approval",
+      "without_denial_ledger": false,
+      "with_denial_ledger": false,
+      "without_reason": "restricted_external_release_without_scoped_approval",
+      "with_reason": "persistent_denied_release",
+      "expectations_met": true
+    },
+    {
+      "case_id": "unrelated_public_resource",
+      "without_denial_ledger": true,
+      "with_denial_ledger": true,
+      "without_reason": "release_allowed",
+      "with_reason": "release_allowed",
+      "expectations_met": true
+    },
+    {
+      "case_id": "authorized_internal_recovery",
+      "without_denial_ledger": true,
+      "with_denial_ledger": true,
+      "without_reason": "internal_release_allowed",
+      "with_reason": "internal_release_allowed",
+      "expectations_met": true
+    }
+  ],
+  "caveat": "This tests incremental denial-ledger functionality on controlled states, not empirical attack-prevention rates."
+}
